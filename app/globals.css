@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@theme {
+  --font-comfortaa: "Comfortaa", sans-serif;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-100: #F8F9FA;
+  --color-gray-200: #C8CBD9;
+  --color-gray-300: #A6ABC8;
+  --color-gray-400: #7C8B93;
+  --color-gray-500: #273240;
+  --color-gray-600: #212121;
+  --color-blue-100: #7fc5eb25;
+  --color-blue-200: #28A7E0;
+  --color-blue-300: #269acf;
+  --color-green-100: #149d521f;
+  --color-green-200: #149D52;
+  --color-red-100: #ec525221;
+  --color-red-200: #EC5252;
+  --color-orange-100: #F0531C;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@layer utilities {
+  .paddingX {
+    @apply px-36 lg:px-40 md:px-24 sm:px-8 max-sm:px-6;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+  border-radius: 5px;
+}
